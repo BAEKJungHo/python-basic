@@ -131,4 +131,18 @@ for 변수 in 리스트:
 a = 10
 for num in range(10):
         print(a + num)
+        
+for str in '무지개 색은 빨주노초파남보':
+  print(str)  # 문자열이 한 글자 씩 줄바꿈 출력됨
+```
+
+## 순서열 만들기
+
+- range(시작, 종료)
+  - 자바처럼 시작 ~ 종료-1 까지 만큼 반복문을 실행한다.
+
+```py
+for x in range(2, 10):
+    for y in range(1, 10):
+        print(x, 'x', y, '=', x * y)
 ```
