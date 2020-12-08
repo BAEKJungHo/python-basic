@@ -58,3 +58,18 @@ ab
 ```
 
 - 자바 스크립트와 같이 `작은 따옴표나, 큰 따옴표`로 감싸면 문자열 취급을 한다.
+
+## 제곱, 몫, 나머지
+
+- 제곱(`**`), 몫(`//`), 나머지(`%`)
+
+```py
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print(5//2)
+2
+>>> print(5%2)
+1
+>>> print(5**2)
+25
+```
