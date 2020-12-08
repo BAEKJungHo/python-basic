@@ -73,3 +73,62 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> print(5**2)
 25
 ```
+
+## 리스트
+
+```py
+>>> candies = ['딸기맛', '사과맛']
+>>> print(candies)
+['딸기맛', '사과맛']
+>>> my_list = ['a', 'b', [1.0, 2.0, '3']]
+>>> print(my_list)
+['a', 'b', [1.0, 2.0, '3']]
+>>> my_list.append(1)
+>>> print(my_list)
+['a', 'b', [1.0, 2.0, '3'], 1]
+>>> my_list.remove(1)
+>>> print(my_list)
+['a', 'b', [1.0, 2.0, '3']]
+>>> my_list.remove(asdf)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    my_list.remove(asdf)
+NameError: name 'asdf' is not defined
+>>> my_list.remove('a')
+>>> print(my_list)
+['b', [1.0, 2.0, '3']]
+>>> my_list[1]
+[1.0, 2.0, '3']
+>>> del my_list[1]
+>>> print(my_list)
+['b']
+
+>>> my_list[1:4]
+['1', 'a', '2']
+>>> my_list[1:10]
+['1', 'a', '2']
+>>> my_list[1:2]
+```
+
+- append() : 값 추가하기
+- remove() : 값 제거하기
+- `del 리스트[인덱스]`  : 값 제거하기
+  - 리스트.remove(이름)
+- `리스트[인덱스]` : 값 접근하기
+- `리스트[인덱스시작 : 인덱스종료] : 시작 ~ 종료-1 까지의 값에 접근 
+  - 인덱스 종료를 인덱스 길이보다 크게 줘도 에러 안남
+- 리스트.sort() : 숫자별, 알파벳별 정렬을 수행해준다.
+- 리스트.count(name) : name 에 해당하는 개수를 카운트한다.
+
+## 반복문
+
+```
+for 변수 in 리스트:
+  실행할 문장
+```
+
+```py
+a = 10
+for num in range(10):
+        print(a + num)
+```
