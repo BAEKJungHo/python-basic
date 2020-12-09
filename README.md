@@ -62,6 +62,8 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
 5. 콘솔 폰트 사이즈
 
+- Atom > File > StyleSheet > styles.less 맨 밑에 추가
+
 .script-view .line {
 	font-size: 16px;
 }
