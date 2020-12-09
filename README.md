@@ -66,3 +66,8 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 	font-size: 16px;
 }
 
+## 아톰 설정
+
+- File > Settings > Install
+	- autocomplete-python 검색 후 Install
+	- script 검색 후 Install
