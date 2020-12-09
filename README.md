@@ -73,3 +73,5 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 - File > Settings > Install
 	- autocomplete-python 검색 후 Install
 	- script 검색 후 Install
+	
+- 파이썬 파일 실행 단축키 : Ctrl + Shift + B
