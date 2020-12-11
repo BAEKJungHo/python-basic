@@ -43,29 +43,30 @@ print('{1} {0}'.format('one', 'two'))
 print('%s %s %s' % ('A', 'B', 'C'))
 
 # %s
-print('%10s' % ('nice',))
-print('{:>10}'.format('nice'))
+print('%10s' % ('nice')) # 공백을 왼쪽부터 채우고 문자열을 오른쪽에 채운다.
+print('%-10s' % ('hello')) # 공백을 오른쪽부터 채우고 문자열을 왼쪽에 채운다.
 
-print('%-10s' % ('nice',))
-print('{:10}'.format('nice'))
+print('{:>10}'.format('hello')) # 공백을 왼쪽부터 채우고 문자열을 오른쪽에 채운다.
+print('{:10}'.format('hello')) # 공백을 오른쪽부터 채우고 문자열을 왼쪽에 채운다.
 
-print('{:_<10}'.format('nice'))
-print('{:^10}'.format('nice'))
+print('{:_<10}'.format('nice')) # nice______
+print('{:^10}'.format('nice')) # 문자열을 중간에 위치시킨다.
 
-print('%.5s' % ('pythonstudy',))
-print('{:.5}'.format('pythonstudy'))
-print('{:10.5}'.format('pythonstudy'))
+print('%.5s' % ('pythonstudy',)) # 공간이 5개이고 5글자만 절삭한다.
+print('{:.5}'.format('pythonstudy')) # 공간이 5개이고 5글자만 절삭한다.
+print('{:10.5}'.format('pythonstudy')) # 공간이 10개이고 5글자만 절삭한다.
+
 
 # %d
 print('%d %d' % (1, 2))
 print('{} {}'.format(1, 2))
 
-print('%4d' % (42,))
-print('{:4d}'.format(42))
+print('%4d' % (42,)) #   42
+print('{:4d}'.format(42)) #   42
 
 # %f
-print('%f' % (3.141592653589793,))
-print('{:f}'.format(3.141592653589793))
+print('%f' % (3.141592653589793,)) # 3.141593
+print('{:f}'.format(3.141592653589793)) # 3.141593
 
-print('%06.2f' % (3.141592653589793,))
-print('{:06.2f}'.format(3.141592653589793))
+print('%06.2f' % (3.141592653589793,)) # 003.14
+print('{:06.2f}'.format(3.141592653589793)) # 003.14
