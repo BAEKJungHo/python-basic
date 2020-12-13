@@ -116,3 +116,26 @@ print(dir(im_str))  # __iter__ 확인 # im_str 문자열에서 사용할 수 있
 # 출력
 for i in im_str:
     print(i)
+
+# 슬라이싱
+str_sl = 'Nice Python'
+str_l1 = [1,2,3]
+
+# 슬라이싱 연습
+print(str_sl[0:3])
+print(str_l1[1:])
+print(str_sl[5:])
+print(str_sl[:len(str_sl)]) # str_sl[:11]
+print(str_sl[:len(str_sl) - 1])
+print(str_sl[:])
+print(str_sl[1:4:2])
+print(str_sl[-5:])
+print(str_sl[1:-2])
+print(str_sl[::-1]) # 오른쪽 처음부터 끝까지 가져오기 nohtyP eciN
+print(str_sl[::2]) # 처음부터 끝까지 2칸 간격으로 가져오기 Nc yhn
+
+# 아스키코드
+a = 'z'
+
+print(ord(a))
+print(chr(122))
